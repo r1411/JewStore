@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework> 
+
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Material.fs" />
+    <Compile Include="GemType.fs" />
+    <Compile Include="GemData.fs" />
+    <Compile Include="JewelryItemBase.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>
