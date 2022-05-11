@@ -12,6 +12,9 @@
     <Compile Include="GemData.fs" />
     <Compile Include="JewelryItemBase.fs" />
     <Compile Include="Ring.fs" />
+    <Compile Include="Earring.fs" />
+    <Compile Include="Chain.fs" />
+    <Compile Include="Watch.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
