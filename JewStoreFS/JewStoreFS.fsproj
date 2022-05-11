@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net472</TargetFramework> 
@@ -11,6 +11,10 @@
     <Compile Include="GemType.fs" />
     <Compile Include="GemData.fs" />
     <Compile Include="JewelryItemBase.fs" />
+    <Compile Include="Ring.fs" />
+    <Compile Include="Earring.fs" />
+    <Compile Include="Chain.fs" />
+    <Compile Include="Watch.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
