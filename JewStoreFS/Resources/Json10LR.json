@@ -1,0 +1,42 @@
+{
+  "RINGS": [
+    {
+      "Size": 15,
+      "Name": "Кольцо из белого золота с бриллиантами",
+      "Weight": 1.95,
+      "Material": {
+        "Case": "WhiteGold"
+      },
+      "MaterialSample": 585,
+      "GemData": {
+        "GemType": {
+          "Case": "Diamond"
+        },
+        "GemCount": 1,
+        "GemWeight": 0.028
+      },
+      "Price": 40000,
+      "Article": 10001,
+      "PictureURL": "https://pmdn.sokolov.io/pics/FD/31/238A78E75D5F3BD703BBD50A232D.jpg"
+    },
+    {
+      "Size": 18,
+      "Name": "Кольцо из золота с бриллиантом",
+      "Weight": 2.52,
+      "Material": {
+        "Case": "Gold"
+      },
+      "MaterialSample": 585,
+      "GemData": {
+        "GemType": {
+          "Case": "Diamond"
+        },
+        "GemCount": 1,
+        "GemWeight": 0.093
+      },
+      "Price": 49000,
+      "Article": 10002,
+      "PictureURL": "https://pmdn.sokolov.io/pics/B6/03/08B8FECFE504781D2C0756C0FA77.jpg"
+    }
+  ]
+}

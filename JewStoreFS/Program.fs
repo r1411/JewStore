@@ -6,11 +6,15 @@ open GemType
 open Material
 open JewelryItemBase
 open System
+open Newtonsoft.Json
 
 [<EntryPoint>]
 let main argv =
     let g = {GemType = GemType.Diamond; GemCount = 1s;GemWeight = 2 }
-    let r = new Ring(15s,"Крутое кольцо",12.0,Material.Gold,585s,{GemType = GemType.Diamond; GemCount = 1s;GemWeight = 2 },50000,123123,"https://vk.com/tux")
+    let ring1 = new Ring(15s,"Крутое кольцо",12.0,Material.Gold,585s,{GemType = GemType.Diamond; GemCount = 1s;GemWeight = 2 },50000,123123,"https://vk.com/tux")
 
-    Console.WriteLine()
+    let q = JsonConvert.SerializeObject(ring1)
+    let qq = JsonConvert.DeserializeObject<Ring>(q)
+    Console.WriteLine(q)
+
     0
