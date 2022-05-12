@@ -22,7 +22,7 @@
     },
     {
       "Size": 18,
-      "Name": "Кольцо из золота с бриллиантом",
+      "Name": "Золотое кольцо с бриллиантом",
       "Weight": 2.52,
       "Material": { "Case": "Gold" },
       "MaterialSample": 585,
@@ -39,6 +39,48 @@
       "Price": 49000.0,
       "Article": 10002,
       "PictureURL": "https://pmdn.sokolov.io/pics/B6/03/08B8FECFE504781D2C0756C0FA77.jpg"
+    },
+    {
+      "Size": 20,
+      "Name": "Золотое кольцо Shrek",
+      "Weight": 3.69,
+      "Material": { "Case": "Gold" },
+      "MaterialSample": 585,
+      "GemData": null,
+      "Price": 32000.0,
+      "Article": 10003,
+      "PictureURL": "https://i.imgur.com/hj0af0L.jpg"
+    },
+    {
+      "Size": 18,
+      "Name": "Серебряное кольцо Лягушка",
+      "Weight": 2.35,
+      "Material": { "Case": "Silver" },
+      "MaterialSample": 925,
+      "GemData": null,
+      "Price": 5320.0,
+      "Article": 10004,
+      "PictureURL": "https://m.media-amazon.com/images/I/61tHhOdmXEL._AC_SL1500_.jpg"
+    },
+    {
+      "Size": 17,
+      "Name": "Кольцо из белого золота с рубинами",
+      "Weight": 3.11,
+      "Material": { "Case": "WhiteGold" },
+      "MaterialSample": 585,
+      "GemData": {
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "Ruby" },
+            "GemCount": 11,
+            "GemWeight": 0.14
+          }
+        ]
+      },
+      "Price": 127001.0,
+      "Article": 10005,
+      "PictureURL": "https://i.imgur.com/Ky8pCSz.jpg"
     }
   ],
   "EARRINGS": [
@@ -48,7 +90,7 @@
       "Name": "Серьги из серебра с фианитами",
       "Weight": 22.7,
       "Material": { "Case": "Silver" },
-      "MaterialSample": 585,
+      "MaterialSample": 925,
       "GemData": {
         "Case": "Some",
         "Fields": [
@@ -83,6 +125,42 @@
       "Price": 50000.0,
       "Article": 20002,
       "PictureURL": "https://pmdn.sokolov.io/pics/8E/ED/756246337F18A7689680BED761CE.jpg"
+    },
+    {
+      "Length": 80,
+      "HasLock": true,
+      "Name": "Серьги-кольца из золота",
+      "Weight": 2.17,
+      "Material": { "Case": "Gold" },
+      "MaterialSample": 585,
+      "GemData": null,
+      "Price": 24000.0,
+      "Article": 20003,
+      "PictureURL": "https://i.pinimg.com/originals/e4/a5/2b/e4a52b2c80df5aa93e6f4b1cd22e9a60.jpg"
+    },
+    {
+      "Length": 42,
+      "HasLock": false,
+      "Name": "Серьги из золота Череп",
+      "Weight": 5.23,
+      "Material": { "Case": "Gold" },
+      "MaterialSample": 585,
+      "GemData": null,
+      "Price": 56000.0,
+      "Article": 20004,
+      "PictureURL": "https://i.imgur.com/T2kB1eS.jpg"
+    },
+    {
+      "Length": 21,
+      "HasLock": false,
+      "Name": "Серьги из серебра",
+      "Weight": 1.14,
+      "Material": { "Case": "Silver" },
+      "MaterialSample": 925,
+      "GemData": null,
+      "Price": 4200.0,
+      "Article": 20005,
+      "PictureURL": "https://pmdn.sokolov.io/pics/72/72/BBA7FC22C4F2BCF42CD34A397576.jpg"
     }
   ],
   "CHAINS": [
@@ -90,7 +168,7 @@
       "Size": 50,
       "WeavingName": "Нонна",
       "WireThickness": 0.5,
-      "Name": "Цепь из золота",
+      "Name": "Цепочка из красного золота",
       "Weight": 3.69,
       "Material": { "Case": "RedGold" },
       "MaterialSample": 585,
@@ -103,7 +181,7 @@
       "Size": 45,
       "WeavingName": "Бисмарк",
       "WireThickness": 0.45,
-      "Name": "Цепь из белого золота",
+      "Name": "Цепочка из белого золота",
       "Weight": 8.42,
       "Material": { "Case": "WhiteGold" },
       "MaterialSample": 585,
@@ -111,6 +189,54 @@
       "Price": 62500.0,
       "Article": 30002,
       "PictureURL": "https://pmdn.sokolov.io/pics/A6/60/F0A18FD4FFE293306352843077E3.jpg"
+    },
+    {
+      "Size": 90,
+      "WeavingName": "Веревка",
+      "WireThickness": 2.05,
+      "Name": "Цепь из золота Dogg",
+      "Weight": 969.42,
+      "Material": { "Case": "Gold" },
+      "MaterialSample": 585,
+      "GemData": null,
+      "Price": 2420420.0,
+      "Article": 30003,
+      "PictureURL": "https://i.imgur.com/d0VOjAQ.jpg"
+    },
+    {
+      "Size": 45,
+      "WeavingName": "Бриз",
+      "WireThickness": 0.17,
+      "Name": "Цепь серебряная Член Экипажа",
+      "Weight": 12.3,
+      "Material": { "Case": "Silver" },
+      "MaterialSample": 925,
+      "GemData": null,
+      "Price": 9850.0,
+      "Article": 30004,
+      "PictureURL": "https://cdn.shopify.com/s/files/1/0269/6272/2889/products/AmongUsgameSterlingSilvernecklacependant_Goldplated18K_loveandfriendshipjewelrygift_Youlooksus1_580x.jpg"
+    },
+    {
+      "Size": 60,
+      "WeavingName": "Ромб",
+      "WireThickness": 0.4,
+      "Name": "Цепь из белого золота с бриллиантами Playboy",
+      "Weight": 666.0,
+      "Material": { "Case": "WhiteGold" },
+      "MaterialSample": 585,
+      "GemData": {
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "Diamond" },
+            "GemCount": 1000,
+            "GemWeight": 0.1
+          }
+        ]
+      },
+      "Price": 3000000.0,
+      "Article": 30005,
+      "PictureURL": "http://www.rap.ru/upload/img/14119.JPG"
     }
   ],
   "WATCHES": [
@@ -139,6 +265,6 @@
       "Price": 150000.0,
       "Article": 40002,
       "PictureURL": "https://pmdn.sokolov.io/pics/11/C4/CDAF0D2B990087BED2B67995AC28.jpg"
-    }
+    },
   ]
 }
