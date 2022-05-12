@@ -5,6 +5,7 @@ open Earring
 open Chain
 open GemData
 open Watch
+open BaseData
 open GemType
 open Material
 open JewelryItemBase
