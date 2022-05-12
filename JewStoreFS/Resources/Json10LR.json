@@ -38,5 +38,39 @@
       "Article": 10002,
       "PictureURL": "https://pmdn.sokolov.io/pics/B6/03/08B8FECFE504781D2C0756C0FA77.jpg"
     }
+  ],
+  "EARRINGS": [
+    {
+      "Length": 78,
+      "HasLock": true,
+      "Name": "Серьги из серебра с фианитами",
+      "Weight": 22.7,
+      "Material": { "Case": "Silver" },
+      "MaterialSample": 585,
+      "GemData": {
+        "GemType": { "Case": "CubicZirconia" },
+        "GemCount": 492,
+        "GemWeight": 1.0
+      },
+      "Price": 18990.0,
+      "Article": 20001,
+      "PictureURL": "https://pmdn.sokolov.io/pics/F2/9A/D965BE48067E4A1805427A444B02.jpg"
+    },
+    {
+      "Length": 18,
+      "HasLock": true,
+      "Name": "Серьги из золота с бриллиантами",
+      "Weight": 2.35,
+      "Material": { "Case": "Gold" },
+      "MaterialSample": 585,
+      "GemData": {
+        "GemType": { "Case": "Diamond" },
+        "GemCount": 44,
+        "GemWeight": 0.169
+      },
+      "Price": 50000.0,
+      "Article": 20002,
+      "PictureURL": "https://pmdn.sokolov.io/pics/8E/ED/756246337F18A7689680BED761CE.jpg"
+    }
   ]
 }
