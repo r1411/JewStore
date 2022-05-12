@@ -2,20 +2,21 @@
   "RINGS": [
     {
       "Size": 15,
-      "Name": "Кольцо из белого золота с бриллиантами",
+      "Name": "Кольцо из белого золота с бриллиантом",
       "Weight": 1.95,
-      "Material": {
-        "Case": "WhiteGold"
-      },
+      "Material": { "Case": "WhiteGold" },
       "MaterialSample": 585,
       "GemData": {
-        "GemType": {
-          "Case": "Diamond"
-        },
-        "GemCount": 1,
-        "GemWeight": 0.028
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "Diamond" },
+            "GemCount": 1,
+            "GemWeight": 0.028
+          }
+        ]
       },
-      "Price": 40000,
+      "Price": 40000.0,
       "Article": 10001,
       "PictureURL": "https://pmdn.sokolov.io/pics/FD/31/238A78E75D5F3BD703BBD50A232D.jpg"
     },
@@ -23,18 +24,19 @@
       "Size": 18,
       "Name": "Кольцо из золота с бриллиантом",
       "Weight": 2.52,
-      "Material": {
-        "Case": "Gold"
-      },
+      "Material": { "Case": "Gold" },
       "MaterialSample": 585,
       "GemData": {
-        "GemType": {
-          "Case": "Diamond"
-        },
-        "GemCount": 1,
-        "GemWeight": 0.093
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "Diamond" },
+            "GemCount": 1,
+            "GemWeight": 0.093
+          }
+        ]
       },
-      "Price": 49000,
+      "Price": 49000.0,
       "Article": 10002,
       "PictureURL": "https://pmdn.sokolov.io/pics/B6/03/08B8FECFE504781D2C0756C0FA77.jpg"
     }
@@ -48,9 +50,14 @@
       "Material": { "Case": "Silver" },
       "MaterialSample": 585,
       "GemData": {
-        "GemType": { "Case": "CubicZirconia" },
-        "GemCount": 492,
-        "GemWeight": 1.0
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "CubicZirconia" },
+            "GemCount": 492,
+            "GemWeight": 1.0
+          }
+        ]
       },
       "Price": 18990.0,
       "Article": 20001,
@@ -64,13 +71,74 @@
       "Material": { "Case": "Gold" },
       "MaterialSample": 585,
       "GemData": {
-        "GemType": { "Case": "Diamond" },
-        "GemCount": 44,
-        "GemWeight": 0.169
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "Diamond" },
+            "GemCount": 44,
+            "GemWeight": 0.169
+          }
+        ]
       },
       "Price": 50000.0,
       "Article": 20002,
       "PictureURL": "https://pmdn.sokolov.io/pics/8E/ED/756246337F18A7689680BED761CE.jpg"
+    }
+  ],
+  "CHAINS": [
+    {
+      "Size": 50,
+      "WeavingName": "Нонна",
+      "WireThickness": 0.5,
+      "Name": "Цепь из золота",
+      "Weight": 3.69,
+      "Material": { "Case": "RedGold" },
+      "MaterialSample": 585,
+      "GemData": null,
+      "Price": 30000.0,
+      "Article": 30001,
+      "PictureURL": "https://pmdn.sokolov.io/pics/A0/19/79BDF85A41E1DFC20907B35EAD45.jpg"
+    },
+    {
+      "Size": 45,
+      "WeavingName": "Бисмарк",
+      "WireThickness": 0.45,
+      "Name": "Цепь из белого золота",
+      "Weight": 8.42,
+      "Material": { "Case": "WhiteGold" },
+      "MaterialSample": 585,
+      "GemData": null,
+      "Price": 62500.0,
+      "Article": 30002,
+      "PictureURL": "https://pmdn.sokolov.io/pics/A6/60/F0A18FD4FFE293306352843077E3.jpg"
+    }
+  ],
+  "WATCHES": [
+    {
+      "FaceDiameter": 34.0,
+      "BandLength": 150.0,
+      "HasLights": false,
+      "Name": "Женские стальные часы",
+      "Weight": 199.0,
+      "Material": { "Case": "Steel" },
+      "MaterialSample": 316,
+      "GemData": null,
+      "Price": 6000.0,
+      "Article": 40001,
+      "PictureURL": "https://pmdn.sokolov.io/pics/D2/54/C0F8301F9FA65002280FAED9EC07.jpg"
+    },
+    {
+      "FaceDiameter": 38.0,
+      "BandLength": 180.0,
+      "HasLights": false,
+      "Name": "Мужские золотые часы",
+      "Weight": 220.0,
+      "Material": { "Case": "Gold" },
+      "MaterialSample": 585,
+      "GemData": null,
+      "Price": 150000.0,
+      "Article": 40002,
+      "PictureURL": "https://pmdn.sokolov.io/pics/11/C4/CDAF0D2B990087BED2B67995AC28.jpg"
     }
   ]
 }
