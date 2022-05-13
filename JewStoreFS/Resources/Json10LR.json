@@ -153,14 +153,23 @@
     {
       "Length": 21,
       "HasLock": false,
-      "Name": "Серьги из серебра",
+      "Name": "Серьги из серебра с изумрудами",
       "Weight": 1.14,
       "Material": { "Case": "Silver" },
       "MaterialSample": 925,
-      "GemData": null,
+      "GemData": {
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "Emerald" },
+            "GemCount": 1,
+            "GemWeight": 0.8
+          }
+        ]
+      },
       "Price": 4200.0,
       "Article": 20005,
-      "PictureURL": "https://pmdn.sokolov.io/pics/72/72/BBA7FC22C4F2BCF42CD34A397576.jpg"
+      "PictureURL": "https://nebo.ru/448x448//ready_new/2056400_01.jpg"
     }
   ],
   "CHAINS": [
@@ -244,7 +253,7 @@
       "FaceDiameter": 34.0,
       "BandLength": 150.0,
       "HasLights": false,
-      "Name": "Женские стальные часы",
+      "Name": "Стальные часы",
       "Weight": 199.0,
       "Material": { "Case": "Steel" },
       "MaterialSample": 316,
@@ -257,7 +266,7 @@
       "FaceDiameter": 38.0,
       "BandLength": 180.0,
       "HasLights": false,
-      "Name": "Мужские золотые часы",
+      "Name": "Золотые часы",
       "Weight": 220.0,
       "Material": { "Case": "Gold" },
       "MaterialSample": 585,
@@ -266,5 +275,53 @@
       "Article": 40002,
       "PictureURL": "https://pmdn.sokolov.io/pics/11/C4/CDAF0D2B990087BED2B67995AC28.jpg"
     },
+    {
+      "FaceDiameter": 40.0,
+      "BandLength": 182.0,
+      "HasLights": false,
+      "Name": "Платиновые часы Rolex Day-Date с бриллиантами",
+      "Weight": 196.0,
+      "Material": { "Case": "Platinum" },
+      "MaterialSample": 950,
+      "GemData": {
+        "Case": "Some",
+        "Fields": [
+          {
+            "GemType": { "Case": "Diamond" },
+            "GemCount": 10,
+            "GemWeight": 0.2
+          }
+        ]
+      },
+      "Price": 7500000.0,
+      "Article": 40003,
+      "PictureURL": "https://content.rolex.com/dam/2022/upright-bba-with-shadow/m228236-0004.png?impolicy=v6-main-feature&c1x=1800&c1y=2800&imwidth=1920"
+    },
+    {
+      "FaceDiameter": 40.0,
+      "BandLength": 175.0,
+      "HasLights": true,
+      "Name": "Часы Blancpain Grande Date Aqua Lung",
+      "Weight": 196.0,
+      "Material": { "Case": "Steel" },
+      "MaterialSample": 316,
+      "GemData": null,
+      "Price": 1800000.0,
+      "Article": 40004,
+      "PictureURL": "https://316.watch/upload/medialibrary/c40/c40606c7346d4aa34f6d6ceefc91782e.jpg"
+    },
+    {
+      "FaceDiameter": 36.0,
+      "BandLength": 175.0,
+      "HasLights": true,
+      "Name": "Часы Ben 10 Omnitrix",
+      "Weight": 134.0,
+      "Material": { "Case": "Steel" },
+      "MaterialSample": 316,
+      "GemData": null,
+      "Price": 75300.0,
+      "Article": 40005,
+      "PictureURL": "https://cdn.watchcharts.com/listings/1444ddab-03ab-449a-ba87-be067e764dff"
+    }
   ]
 }
