@@ -5,7 +5,7 @@ open Earring
 open Chain
 open GemData
 open Watch
-open BaseData
+open JsonDB
 open GemType
 open Material
 open JewelryItemBase
@@ -20,8 +20,6 @@ let main argv =
     let chain1 = new Chain(50s,"Нонна",0.5,"Цепь из золота",3.69,Material.RedGold,585s,None,30000,30001,"https://pmdn.sokolov.io/pics/A0/19/79BDF85A41E1DFC20907B35EAD45.jpg")
     let watch1 = new Watch(34,150,false,"Женские стальные часы",199,Material.Steel,316s,None,6000,40001,"https://pmdn.sokolov.io/pics/D2/54/C0F8301F9FA65002280FAED9EC07.jpg")     
 
-    let q = JsonConvert.SerializeObject(watch1)
-    let qq = JsonConvert.DeserializeObject<Ring>(q)
-    Console.WriteLine(q)
-
+    let db = new JsonDB("D:/jewelry.json")
+    List.iter (fun (item: JewelryItemBase) -> printfn "%d %s" item.Article item.Name) <| db.GetChains()
     0
