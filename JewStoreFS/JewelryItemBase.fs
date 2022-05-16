@@ -1,7 +1,4 @@
-﻿module JewelryItemBase
-
-open Material
-open GemData
+﻿namespace JewStoreFS
 
 [<AbstractClass>]
 type JewelryItemBase(name: string, weight: double, material: Material, materialSample: int16, gemData:Option<GemData>, price: double, article: int64, pictureURL: string) =

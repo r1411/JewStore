@@ -1,10 +1,4 @@
-﻿module JsonDB
-
-open Ring
-open Earring
-open Chain
-open Watch
-open JewelryItemBase
+﻿namespace JewStoreFS
 
 open System.IO
 open Newtonsoft.Json.Linq

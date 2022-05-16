@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net472</TargetFramework> 
 
     <WarnOn>3390;$(WarnOn)</WarnOn>
@@ -16,7 +16,6 @@
     <Compile Include="Chain.fs" />
     <Compile Include="Watch.fs" />
     <Compile Include="JsonDB.fs" />
-    <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>

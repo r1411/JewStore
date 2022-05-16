@@ -1,4 +1,4 @@
-﻿module Material
+﻿namespace JewStoreFS
 
 type Material =
     | Gold
