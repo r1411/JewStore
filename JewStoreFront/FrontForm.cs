@@ -3,6 +3,11 @@ using System.Windows.Forms;
 using Microsoft.FSharp.Collections;
 using System;
 using Microsoft.FSharp.Core;
+using System.Drawing;
+using System.Threading.Tasks;
+using System.Net;
+using System.IO;
+using System.IO.Compression;
 
 namespace JewStoreFront
 {
@@ -10,11 +15,13 @@ namespace JewStoreFront
     {
         private JsonDB db;
         private FSharpList<JewelryItemBase> selectedItems;
+        private Bitmap loadingPlaceholder;
 
         public FrontForm(string dbPath)
         {
             this.db = new JsonDB(dbPath);
-            
+            this.loadingPlaceholder = Properties.Resources.gif_loader_diamond;
+
             InitializeComponent();
             comboBoxType.SelectedIndex = 0;
             comboBoxSorting.SelectedIndex = 3;
@@ -66,9 +73,11 @@ namespace JewStoreFront
             desc += $"\nАртикул: {item.Article}\n" +
                 $"Цена: {item.Price} ₽";
 
-
+            this.pictureBox.Height = 414;
+            this.pictureBox.Image = loadingPlaceholder;
             this.labelItemName.Text = item.Name;
             this.labelItemDescription.Text = desc;
+            this.pictureBox.LoadAsync(item.PictureURL);
         }
 
         // Обновить список товаров в левой части экрана
@@ -129,6 +138,12 @@ namespace JewStoreFront
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             DisplayItem(selectedItems[listBox.SelectedIndex]);
+        }
+
+        private void pictureBox_LoadCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+            double scale = (double) pictureBox.Width / pictureBox.Image.Width;
+            pictureBox.Height = ((int)Math.Round(pictureBox.Image.Height * scale));
         }
     }
 }
