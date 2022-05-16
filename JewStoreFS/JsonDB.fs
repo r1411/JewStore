@@ -29,3 +29,6 @@ type JsonDB(filePath: string) =
 
     member this.GetWatches() =
         List.filter (fun (item: JewelryItemBase) -> item :? Watch) jewItems
+
+    static member Sorted(items: (JewelryItemBase list), sortingFunction) =
+        List.sortWith sortingFunction items
