@@ -20,6 +20,13 @@ namespace JewStoreFront
             comboBoxSorting.SelectedIndex = 3;
         }
 
+        // Отобразить товар в правой части экрана
+        private void DisplayItem(JewelryItemBase item)
+        {
+            this.labelItemName.Text = item.Name;
+            this.labelItemDescription.Text = $"Вес: {item.Weight}";
+        }
+
         // Обновить список товаров в левой части экрана
         private void UpdateItemsList()
         {
@@ -73,6 +80,11 @@ namespace JewStoreFront
         private void comboBoxSorting_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             UpdateItemsList();
+        }
+
+        private void listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplayItem(selectedItems[listBox.SelectedIndex]);
         }
     }
 }
