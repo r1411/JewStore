@@ -1,4 +1,4 @@
-﻿module GemType
+﻿namespace JewStoreFS
 
 type GemType =
     | Diamond

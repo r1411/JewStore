@@ -1,9 +1,4 @@
-﻿module Watch
-
-
-open GemData
-open Material
-open JewelryItemBase
+﻿namespace JewStoreFS
 
 type Watch(faceDiameter:double, bandLength:double,hasLights:bool, name: string, weight: double, material: Material, materialSample: int16, gemData: Option<GemData>, price: double, article: int64, pictureURL: string) =
     inherit JewelryItemBase(name, weight, material, materialSample, gemData, price, article, pictureURL)
