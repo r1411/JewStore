@@ -1,8 +1,7 @@
-﻿module GemType
+﻿namespace JewStoreFS
 
 type GemType =
     | Diamond
     | Emerald
     | Ruby
-    | Sapphire
     | CubicZirconia
