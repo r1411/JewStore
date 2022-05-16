@@ -23,8 +23,52 @@ namespace JewStoreFront
         // Отобразить товар в правой части экрана
         private void DisplayItem(JewelryItemBase item)
         {
+            string desc = $"Вес: {item.Weight} г\n" +
+                $"Материал: {FormatUtils.MaterialToString(item.Material)}\n" +
+                $"Проба: {item.MaterialSample}\n";
+
+            if (item is Ring)
+            {
+                Ring ring = (Ring)item;
+                desc += $"Размер: {ring.Size}\n";
+            }
+
+            if (item is Earring)
+            {
+                Earring earring = (Earring)item;
+                desc += $"Длина: {earring.Length} мм\n" +
+                    "С замком: " + (earring.HasLock ? "Да" : "Нет") + "\n";
+            }
+
+            if (item is Chain)
+            {
+                Chain chain = (Chain)item;
+                desc += $"Размер: {chain.Size}\n" +
+                    $"Тип плетения: {chain.WeavingName}\n" +
+                    $"Толщина проволоки: {chain.WireThickness}\n";
+            }
+
+            if (item is Watch)
+            {
+                Watch watch = (Watch)item;
+                desc += $"Диаметр циферблата: {watch.FaceDiameter} мм\n" +
+                    $"Длина ремешка: {watch.BandLength} мм\n" +
+                    $"Подсветка: " + (watch.HasLights ? "Есть" : "Нет") + "\n";
+            }
+
+            if (OptionModule.IsSome(item.GemData))
+            {
+                desc += $"\nДрагоценный камень: {FormatUtils.GemTypeToString(item.GemData.Value.GemType)}\n" +
+                    $"Количество: {item.GemData.Value.GemCount} шт.\n" +
+                    $"Суммарный вес: {item.GemData.Value.GemWeight * item.GemData.Value.GemCount} карат\n";
+            }
+
+            desc += $"\nАртикул: {item.Article}\n" +
+                $"Цена: {item.Price} ₽";
+
+
             this.labelItemName.Text = item.Name;
-            this.labelItemDescription.Text = $"Вес: {item.Weight}";
+            this.labelItemDescription.Text = desc;
         }
 
         // Обновить список товаров в левой части экрана

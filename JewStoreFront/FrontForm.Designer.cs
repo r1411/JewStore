@@ -33,17 +33,17 @@
             this.listBox = new System.Windows.Forms.ListBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.comboBoxSorting = new System.Windows.Forms.ComboBox();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.chooseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.labelItemName = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.labelItemDescription = new System.Windows.Forms.Label();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.chooseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.menuStrip.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -124,22 +124,6 @@
             this.comboBoxSorting.TabIndex = 2;
             this.comboBoxSorting.SelectedIndexChanged += new System.EventHandler(this.comboBoxSorting_SelectedIndexChanged);
             // 
-            // menuStrip
-            // 
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chooseToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip.TabIndex = 1;
-            this.menuStrip.Text = "menuStrip1";
-            // 
-            // chooseToolStripMenuItem
-            // 
-            this.chooseToolStripMenuItem.Name = "chooseToolStripMenuItem";
-            this.chooseToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.chooseToolStripMenuItem.Text = "Выбрать";
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
@@ -182,10 +166,27 @@
             // labelItemDescription
             // 
             this.labelItemDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelItemDescription.Location = new System.Drawing.Point(115, 104);
+            this.labelItemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelItemDescription.Location = new System.Drawing.Point(3, 0);
             this.labelItemDescription.Name = "labelItemDescription";
-            this.labelItemDescription.Size = new System.Drawing.Size(35, 13);
+            this.labelItemDescription.Size = new System.Drawing.Size(405, 384);
             this.labelItemDescription.TabIndex = 0;
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chooseToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip.TabIndex = 1;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // chooseToolStripMenuItem
+            // 
+            this.chooseToolStripMenuItem.Name = "chooseToolStripMenuItem";
+            this.chooseToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.chooseToolStripMenuItem.Text = "Выбрать";
             // 
             // FrontForm
             // 
@@ -200,10 +201,10 @@
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
