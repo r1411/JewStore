@@ -163,12 +163,12 @@ namespace JewStoreFront
 
         private void часыССамымМаленькимДисплеемToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            DisplayItem(db.GetMostSmallDisplaySizeWathes());
         }
 
         private void украшениеСНаибольшимЧисломКамнейToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            DisplayItem(db.GetMostCountOfGemsJewelry());
         }
     }
 }
