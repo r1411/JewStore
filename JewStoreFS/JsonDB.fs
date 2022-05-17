@@ -3,7 +3,6 @@
 open System.IO
 open Newtonsoft.Json.Linq
 
-
 type JsonDB(filePath: string) = 
     let jewItems:(JewelryItemBase list) =
         let rootObj = JObject.Parse(File.ReadAllText(filePath))
@@ -30,5 +29,25 @@ type JsonDB(filePath: string) =
     member this.GetWatches() =
         List.filter (fun (item: JewelryItemBase) -> item :? Watch) jewItems
 
+    member this.GetMostExpensiveRing() =
+        List.maxBy(fun (item:JewelryItemBase)->item.Price) (this.GetRings())
+
+    member this.GetMostThickChain() =
+        let chains = List.map(fun (item:JewelryItemBase) -> item :?> Chain) (this.GetChains())
+        List.maxBy(fun (item:Chain)->item.WireThickness ) chains
+
+    member this.GetMostShortEarring() =
+        let earrings = List.map(fun(item:JewelryItemBase)->item:?>Earring) (this.GetEarrings())
+        List.minBy(fun(item:Earring)->item.Length) earrings
+
+    member this.GetMostSmallDisplaySizeWathes()=
+        let watches = List.map(fun(item:JewelryItemBase)->item:?>Watch) (this.GetWatches())
+        List.minBy(fun(item:Watch)->item.FaceDiameter) watches
+
+    member this.GetMostCountOfGemsJewelry()=
+        List.maxBy(fun(item:JewelryItemBase)->if (item.GemData.IsSome) then item.GemData.Value.GemCount else 0s) jewItems
+
     static member Sorted(items: (JewelryItemBase list), sortingFunction) =
         List.sortWith sortingFunction items
+
+    
