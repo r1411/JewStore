@@ -145,5 +145,30 @@ namespace JewStoreFront
             double scale = (double) pictureBox.Width / pictureBox.Image.Width;
             pictureBox.Height = ((int)Math.Round(pictureBox.Image.Height * scale));
         }
+
+        private void самоеДорогоеКольцоToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DisplayItem(db.GetMostExpensiveRing());
+        }
+
+        private void самаяТолстаяЦепочкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DisplayItem(db.GetMostThickChain());
+        }
+
+        private void самыеКороткиеСерьгиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DisplayItem(db.GetMostShortEarring());
+        }
+
+        private void часыССамымМаленькимДисплеемToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void украшениеСНаибольшимЧисломКамнейToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

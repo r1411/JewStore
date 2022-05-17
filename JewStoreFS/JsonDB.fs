@@ -30,5 +30,21 @@ type JsonDB(filePath: string) =
     member this.GetWatches() =
         List.filter (fun (item: JewelryItemBase) -> item :? Watch) jewItems
 
+    member this.GetMostExpensiveRing() =
+        let rings = this.GetRings()
+        List.maxBy(fun (item:JewelryItemBase)->item.Price) rings
+
+    member this.GetMostThickChain() =
+        let chainlist = this.GetChains()
+        let chains = List.map(fun (item:JewelryItemBase) -> item :?> Chain) chainlist
+        List.maxBy(fun (item:Chain)->item.WireThickness ) chains
+
+    member this.GetMostShortEarring() =
+        let earringslist = this.GetEarrings()
+        let earrings = List.map(fun(item:JewelryItemBase)->item:?>Earring) earringslist
+        List.minBy(fun(item:Earring)->item.Length) earrings
+
     static member Sorted(items: (JewelryItemBase list), sortingFunction) =
         List.sortWith sortingFunction items
+
+    
